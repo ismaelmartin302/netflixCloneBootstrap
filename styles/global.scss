@@ -1,0 +1,14 @@
+// Declarar variables
+$primary: #f1f1f1; // Color primario
+$secondary: #ff0000;
+$prefix: "isma-";
+
+// Importar estilos
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// Editar estilos
+.active {
+    color: #fff !important;
+}
+// * {border: 1px solid yellow;}
