@@ -13,7 +13,7 @@
 <body class="bg-black overflow-x-hidden d-flex flex-column gap-5">
     <!-- * MENU NAVEGACION -->
     <!-- * MENU NAVEGACION -->
-    <header class="position-fixed bg-opacity-75 bg-black w-100">
+    <header class="position-fixed bg-opacity-75 bg-black w-100 z-1">
         <nav class="d-flex align-items-center m-1 ms-4 gap-3">
             <a href="/"><img class="img-fluid" style="max-width: 100px" src="assets/logo.png"></a>
             <ul class="nav nav-underline w-100">
@@ -28,10 +28,12 @@
     <main class="d-flex flex-column gap-5">
         <!-- * IMAGEN DE PORTADA -->
         <!-- * IMAGEN DE PORTADA -->
-        <article>
-            <img class="img-fluid" src="assets/video_attackOnTitan.jpg">
-                <button class="btn btn-primary d-flex align-items-center gap-2"><i
-                        class="bi bi-play-fill"></i>Reproducir</button>
+        <article class="position-relative z-0 anim-hover-video">
+            <img class="position-absolute img-fluid w-50 z-1" style="top: 40%; left: 10%;" src="assets/video_attackOnTitanLogo.png" >
+            <video loop autoplay muted class="img-fluid w-100 position-absolute object-fit-cover anim-video" style="aspect-ratio: 651/407;" src="assets/video/video_shingekiPreview.mp4"></video>
+            <img class="img-fluid w-100" src="assets/video_attackOnTitan.jpg">
+            <a class="btn btn-primary d-flex align-items-center gap-2 position-absolute" style="top: 82%; left: 10%; font-size: 3vw;" href="pages/form.html"><i class="bi bi-play-fill"></i><p class="m-0">Reproducir</p></a>
+            <button class="btn btn-dark bg-dark bg-opacity-75 d-flex align-items-center gap-2 position-absolute" style="top: 82%; left: 10%; margin-left: 10em; font-size: 3vw;"><i class="bi bi-info-circle"></i><p class="m-0">Informacion</p></button>
         </article>
         <!-- * /IMAGEN DE PORTADA -->
         <!-- * /IMAGEN DE PORTADA -->
@@ -50,7 +52,7 @@
                 <div class="carousel-inner">
                     <p class="text-primary mb-1 ms-3">Peliculas</p>
                     <div class="carousel-item active">
-                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/movie_dayShift.jpg" class="w-25" loading="lazy" />
                             <img src="assets/movie_lift.jpg" class="w-25" loading="lazy" />
                             <img src="assets/movie_theHill.jpg" class="w-25" loading="lazy" />
@@ -58,7 +60,7 @@
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/movie_scream2.jpg" class="w-25" loading="lazy" />
                             <img src="assets/movie_zodiac.jpg" class="w-25" loading="lazy" />
                             <img src="assets/movie_mario.jpg" class="w-25" loading="lazy" />
@@ -66,7 +68,7 @@
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/movie_trolls.jpg" class="w-25" loading="lazy" />
                             <img src="assets/movie_theAbyss.jpg" class="w-25" loading="lazy" />
                             <img src="assets/movie_narcel.jpg" class="w-25" loading="lazy" />
@@ -101,7 +103,7 @@
                 <div class="carousel-inner">
                     <p class="text-primary mb-1 ms-3">Series</p>
                     <div class="carousel-item active">
-                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/serie_anhqv.webp" class="w-25" loading="lazy" />
                             <img src="assets/serie_arcane.jpg" class="w-25" loading="lazy" />
                             <img src="assets/serie_breakingBad.webp" class="w-25" loading="lazy" />
@@ -109,7 +111,7 @@
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/serie_elVecino.jpg" class="w-25" loading="lazy" />
                             <img src="assets/serie_hda.webp" class="w-25" loading="lazy" />
                             <img src="assets/serie_naruto.webp" class="w-25" loading="lazy" />
@@ -117,7 +119,7 @@
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/serie_theGoodPlace.jpg" class="w-25" loading="lazy" />
                             <img src="assets/serie_theSociety.jpg" class="w-25" loading="lazy" />
                             <img src="assets/serie_evangelion.webp" class="w-25" loading="lazy" />
@@ -152,7 +154,7 @@
                 <div class="carousel-inner">
                     <p class="text-primary mb-1 ms-3">Solo en Netflix</p>
                     <div class="carousel-item active">
-                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/serieN_dinero.jpg" class="w-25" loading="lazy" />
                             <img src="assets/serieN_dirk.jpg" class="w-25" loading="lazy" />
                             <img src="assets/serieN_edadOro.jpg" class="w-25" loading="lazy" />
@@ -160,7 +162,7 @@
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/serieN_imperdibles.jpg" class="w-25" loading="lazy" />
                             <img src="assets/serieN_lado.jpg" class="w-25" loading="lazy" />
                             <img src="assets/serieN_marco.jpg" class="w-25" loading="lazy" />
@@ -168,7 +170,7 @@
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/serieN_resident.jpg" class="w-25" loading="lazy" />
                             <img src="assets/serieN_sombra.jpg" class="w-25" loading="lazy" />
                             <img src="assets/serieN_sweet.jpg" class="w-25" loading="lazy" />
@@ -199,23 +201,23 @@
             <a href=""><i class="bi bi-youtube fs-1"></i></a>
         </ul>
         <div class="d-flex justify-content-around text-white-50 flex-wrap gap-4">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled" style="width: 10em;">
                 <li>Audiodescripción</li>
                 <li>Inversores</li>
                 <li>Avisos legales</li>
                 <li>Opciones de anuncios</li>
             </ul>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled" style="width: 10em;">
                 <li>Centro de ayuda</li>
                 <li>Empleo</li>
                 <li>Preferencias de cookies</li>
             </ul>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled" style="width: 10em;">
                 <li>Tarjetas regalo</li>
                 <li>Términos de uso</li>
                 <li>Información corporativa</li>
             </ul>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled" style="width: 10em;">
                 <li>Zona de prensa</li>
                 <li>Privacidad</li>
                 <li>Contáctanos</li>

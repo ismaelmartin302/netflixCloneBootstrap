@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Netflix</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/animaciones.css">
+</head>
+
+<body class="bg-black overflow-x-hidden d-flex flex-column gap-5">
+         <!-- Boton para salir del video -->
+        <a href="../index.html" class="position-absolute z-3"><i class="bi bi-arrow-left text-white fs-1 m-3"></i></a>
+        <!-- Video -->
+        <video class="position-absolute w-100 h-100" autoplay src="../assets/video/video_shingekiCompleto.mp4"></video>
+            <!-- * CONTROLES FALSOS -->
+            <!-- * CONTROLES FALSOS -->
+            <footer class="position-absolute bottom-0 w-100">
+                <input type="range" class="form-range p-3" value="12">
+                <nav>
+                    <ul class="list-unstyled d-flex justify-content-between align-items-center anim-controles mb-4">
+                        <div>
+                            <li class="btn text-white"><i class="bi bi-play-fill fs-1"></i></li>
+                            <li class="btn text-white d-none d-sm-inline-block"><i class="bi bi-arrow-counterclockwise fs-1"></i></li>
+                            <li class="btn text-white d-none d-sm-inline-block"><i class="bi bi-arrow-clockwise fs-1"></i></li>
+                            <li class="btn text-white d-none d-sm-inline-block"><i class="bi bi-volume-up-fill fs-1"></i></li>
+                        </div>
+                        <li class="btn text-white">Attack on Titan</li>
+                        <div>
+                            <li class="btn text-white d-none d-sm-inline-block"><i class="bi bi-chat-right-text fs-1"></i></li>
+                            <li class="btn text-white"><i class="bi bi-fullscreen fs-1"></i></li>
+                        </div>
+                    </ul>
+                </nav>
+            </footer>
+            <!-- * /CONTROLES FALSOS -->
+            <!-- * /CONTROLES FALSOS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

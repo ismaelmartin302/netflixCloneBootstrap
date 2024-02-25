@@ -1,11 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/global.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/animaciones.css">
 </head>
-<body>
+
+<body class="bg-black">
+    <main class="d-flex align-items-center flex-column gap-5">
+        <img class="img-fluid w-100 h-100 object-fit-cover position-absolute z-0" src="../assets/background.jpg">
+        <article class="z-1 bg-black h-100 position-absolute p-5 d-flex flex-column justify-content-center" style="width: 30em;">
+            
+            <h1 class="text-white">Iniciar Sesión</h1>
+            <form class="d-flex align-items-center flex-column gap-3">
+                <input type="email" class="form-control bg-dark text-white border-0" placeholder="Email">
+                <input type="password" class="form-control bg-dark text-white border-0" placeholder="Contraseña">
+                <a class="btn btn-success text-white fw-bold w-100" href="video.html">Iniciar Sesión</a>
+                
+                <span class="d-flex gap-2 text-white-50">
+                    <input type="checkbox"> <p class="m-0">Recuérdame</p>
+                    <a href="">¿Necesitas ayuda?</a>
+                </span>
+                <img src="../assets/logo.png" class="img-fluid w-50 mt-5">
+            </form>
+        </article>
+    </main>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+
 </html>

@@ -17,4 +17,21 @@ $prefix: "isma-";
     // Le cambia el color a blanco porque .btn-close-white no me gusta del todo
     filter: invert(1) !important;
 }
+
+.carousel-control-prev, .carousel-control-next {
+    // Hace que esté mas centrado cuando estamos en movil
+    top: 50% !important;
+    bottom: unset !important;
+}
+
+
+input::placeholder {
+    // Para los inputs oscuros
+    color: gray !important;
+}
+
+.form-range::-webkit-slider-thumb {
+    // Para cambiar el color de la bolita del form-range
+    background-color: #ff0000 !important;
+  }
 // * {border: 1px solid yellow;}

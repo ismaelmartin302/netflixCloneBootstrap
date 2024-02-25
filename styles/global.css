@@ -13012,3 +13012,16 @@ textarea.form-control-lg {
 .btn-close {
   filter: invert(1) !important;
 }
+
+.carousel-control-prev, .carousel-control-next {
+  top: 50% !important;
+  bottom: unset !important;
+}
+
+input::placeholder {
+  color: gray !important;
+}
+
+.form-range::-webkit-slider-thumb {
+  background-color: #ff0000 !important;
+}
