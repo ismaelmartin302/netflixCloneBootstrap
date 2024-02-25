@@ -1,6 +1,7 @@
 // Declarar variables
 $primary: #f1f1f1; // Color primario
 $secondary: #ff0000;
+$success: #ff0000;
 $prefix: "isma-";
 
 // Importar estilos
@@ -10,5 +11,10 @@ $prefix: "isma-";
 // Editar estilos
 .active {
     color: #fff !important;
+}
+
+.btn-close {
+    // Le cambia el color a blanco porque .btn-close-white no me gusta del todo
+    filter: invert(1) !important;
 }
 // * {border: 1px solid yellow;}

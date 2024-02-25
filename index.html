@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="styles/animaciones.css">
 </head>
 
-<body class="bg-black">
+<body class="bg-black overflow-x-hidden d-flex flex-column gap-5">
     <!-- * MENU NAVEGACION -->
     <!-- * MENU NAVEGACION -->
     <header class="position-fixed bg-opacity-75 bg-black w-100">
         <nav class="d-flex align-items-center m-1 ms-4 gap-3">
             <a href="/"><img class="img-fluid" style="max-width: 100px" src="assets/logo.png"></a>
             <ul class="nav nav-underline w-100">
-                <li class="nav-link d-none d-sm-block">Inicio</li>
+                <li class="nav-link active d-none d-sm-block">Inicio</li>
                 <li class="nav-link d-none d-sm-block">Series</li>
                 <li class="nav-link d-none d-sm-block">Peliculas</li>
             </ul>
@@ -26,9 +26,16 @@
     <!-- * /MENU NAVEGACION -->
     <!-- * /MENU NAVEGACION -->
     <main class="d-flex flex-column gap-5">
+        <!-- * IMAGEN DE PORTADA -->
+        <!-- * IMAGEN DE PORTADA -->
         <article>
-            <img class="card-img-top" src="assets/video_attackOnTitan.jpg" alt="">
+            <img class="img-fluid" src="assets/video_attackOnTitan.jpg">
+                <button class="btn btn-primary d-flex align-items-center gap-2"><i
+                        class="bi bi-play-fill"></i>Reproducir</button>
         </article>
+        <!-- * /IMAGEN DE PORTADA -->
+        <!-- * /IMAGEN DE PORTADA -->
+
         <!-- * CARRUSEL -->
         <!-- * CARRUSEL -->
         <article>
@@ -79,15 +86,16 @@
         </article>
         <!-- * /CARRUSEL -->
         <!-- * /CARRUSEL -->
+
         <!-- * CARRUSEL2 -->
         <!-- * CARRUSEL2 -->
         <article>
             <div id="carouselId2" class="carousel slide">
                 <!-- ^ Define en que sección está y lo muestra en la parte inferior del carrusel -->
                 <ol class="carousel-indicators list-unstyled d-none d-sm-flex">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselId2" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId2" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId2" data-bs-slide-to="2"></li>
                 </ol>
                 <!-- ^ Lo que hay dentro del carrusel -->
                 <div class="carousel-inner">
@@ -129,7 +137,111 @@
         </article>
         <!-- * /CARRUSEL2 -->
         <!-- * /CARRUSEL2 -->
+
+        <!-- * CARRUSEL3 -->
+        <!-- * CARRUSEL3 -->
+        <article>
+            <div id="carouselId3" class="carousel slide">
+                <!-- ^ Define en que sección está y lo muestra en la parte inferior del carrusel -->
+                <ol class="carousel-indicators list-unstyled d-none d-sm-flex">
+                    <li data-bs-target="#carouselId3" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId3" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId3" data-bs-slide-to="2"></li>
+                </ol>
+                <!-- ^ Lo que hay dentro del carrusel -->
+                <div class="carousel-inner">
+                    <p class="text-primary mb-1 ms-3">Solo en Netflix</p>
+                    <div class="carousel-item active">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                            <img src="assets/serieN_dinero.jpg" class="w-25" loading="lazy" />
+                            <img src="assets/serieN_dirk.jpg" class="w-25" loading="lazy" />
+                            <img src="assets/serieN_edadOro.jpg" class="w-25" loading="lazy" />
+                            <img src="assets/serieN_happy.jpg" class="w-25" loading="lazy" />
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                            <img src="assets/serieN_imperdibles.jpg" class="w-25" loading="lazy" />
+                            <img src="assets/serieN_lado.jpg" class="w-25" loading="lazy" />
+                            <img src="assets/serieN_marco.jpg" class="w-25" loading="lazy" />
+                            <img src="assets/serieN_monja.jpg" class="w-25" loading="lazy" />
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="https://www.netflix.com">
+                            <img src="assets/serieN_resident.jpg" class="w-25" loading="lazy" />
+                            <img src="assets/serieN_sombra.jpg" class="w-25" loading="lazy" />
+                            <img src="assets/serieN_sweet.jpg" class="w-25" loading="lazy" />
+                            <img src="assets/serieN_vanHelsing.jpg" class="w-25" loading="lazy" />
+                        </a>
+                    </div>
+                </div>
+                <!-- ^ Controles del carrusel -->
+                <button class="carousel-control-prev" data-bs-target="#carouselId3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carouselId3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+
+        </article>
+        <!-- * /CARRUSEL3 -->
+        <!-- * /CARRUSEL3 -->
     </main>
+    <footer class="mt-5">
+        <!-- * FOOTER CON LINKS FALSOS -->
+        <!-- * FOOTER CON LINKS FALSOS -->
+        <ul class="d-flex gap-4">
+            <a href=""><i class="bi bi-facebook fs-1"></i></a>
+            <a href=""><i class="bi bi-instagram fs-1"></i></a>
+            <a href=""><i class="bi bi-twitter fs-1"></i></a>
+            <a href=""><i class="bi bi-youtube fs-1"></i></a>
+        </ul>
+        <div class="d-flex justify-content-around text-white-50 flex-wrap gap-4">
+            <ul class="list-unstyled">
+                <li>Audiodescripción</li>
+                <li>Inversores</li>
+                <li>Avisos legales</li>
+                <li>Opciones de anuncios</li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>Centro de ayuda</li>
+                <li>Empleo</li>
+                <li>Preferencias de cookies</li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>Tarjetas regalo</li>
+                <li>Términos de uso</li>
+                <li>Información corporativa</li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>Zona de prensa</li>
+                <li>Privacidad</li>
+                <li>Contáctanos</li>
+            </ul>
+        </div>
+        <!-- * /FOOTER CON LINKS FALSOS -->
+        <!-- * /FOOTER CON LINKS FALSOS -->
+
+        <!-- * ALERTA -->
+        <!-- * ALERTA -->
+        <div class="alert alert-primary alert-dismissible fade show position-fixed bottom-0 z-3 bg-dark m-4"
+            role="alert">
+            <strong class="text-white fs-5 d-flex gap-2"><i class="bi bi-cookie"></i>Cookies y Privacidad</strong>
+            <p class="text-white">Usamos cookies para mejorar su experiencia de navegación en nuestra web, para
+                mostrarle contenidos personalizados y para analizar el tráfico en nuestra web.</p>
+            <div class="d-flex justify-content-end gap-2">
+                <button type="button" class="btn btn-success text-white fw-bold" data-bs-dismiss="alert"
+                    aria-label="Close">Aceptar</button>
+                <button type="button" class="btn btn-light text-bg-dark fw-bold" data-bs-dismiss="alert"
+                    aria-label="Close">Rechazar</button>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+        <!-- * /ALERTA -->
+        <!-- * /ALERTA -->
+    </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
