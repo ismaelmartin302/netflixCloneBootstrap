@@ -17,10 +17,26 @@
         <nav class="d-flex align-items-center m-1 ms-4 gap-3">
             <a href="/"><img class="img-fluid" style="max-width: 100px" src="assets/logo.png"></a>
             <ul class="nav nav-underline w-100">
-                <li class="nav-link active d-none d-sm-block">Inicio</li>
-                <li class="nav-link d-none d-sm-block">Series</li>
-                <li class="nav-link d-none d-sm-block">Peliculas</li>
+                <a href="#" class="nav-link active d-none d-sm-block">Inicio</a>
+                <a href="pages/form.html" class="nav-link d-none d-sm-block">Formulario</a>
+                <a href="pages/video.html" class="nav-link d-none d-sm-block">Video</a>
             </ul>
+
+            <!-- * DESPLEGABLE -->
+            <!-- * DESPLEGABLE -->
+            <div class="dropdown">
+                <button class="btn bi bi-list fs-1 text-white" type="button" id="triggerId" data-bs-toggle="dropdown">
+                </button>
+                <div class="dropdown-menu dropdown-menu-dark bg-black">
+                    <a class="dropdown-item disabled" href="#">Principal</a>
+                    <a class="dropdown-item" href="pages/form.html">Formulario</a>
+                    <a class="dropdown-item" href="pages/video.html">Video</a>
+                </div>
+            </div>
+            <!-- * /DESPLEGABLE -->
+            <!-- * /DESPLEGABLE -->
+
+
         </nav>
     </header>
     <!-- * /MENU NAVEGACION -->
@@ -29,11 +45,19 @@
         <!-- * IMAGEN DE PORTADA -->
         <!-- * IMAGEN DE PORTADA -->
         <article class="position-relative z-0 anim-hover-video">
-            <img class="position-absolute img-fluid w-50 z-1" style="top: 40%; left: 10%;" src="assets/video_attackOnTitanLogo.png" >
-            <video loop autoplay muted class="img-fluid w-100 position-absolute object-fit-cover anim-video" style="aspect-ratio: 651/407;" src="assets/video/video_shingekiPreview.mp4"></video>
+            <img class="position-absolute img-fluid w-50 z-1" style="top: 40%; left: 10%;"
+                src="assets/video_attackOnTitanLogo.png">
+            <video loop autoplay muted class="img-fluid w-100 position-absolute object-fit-cover anim-video"
+                style="aspect-ratio: 651/407;" src="assets/video/video_shingekiPreview.mp4"></video>
             <img class="img-fluid w-100" src="assets/video_attackOnTitan.jpg">
-            <a class="btn btn-primary d-flex align-items-center gap-2 position-absolute" style="top: 82%; left: 10%; font-size: 3vw;" href="pages/form.html"><i class="bi bi-play-fill"></i><p class="m-0">Reproducir</p></a>
-            <button class="btn btn-dark bg-dark bg-opacity-75 d-flex align-items-center gap-2 position-absolute" style="top: 82%; left: 10%; margin-left: 10em; font-size: 3vw;"><i class="bi bi-info-circle"></i><p class="m-0">Informacion</p></button>
+            <a class="btn btn-primary d-flex align-items-center gap-2 position-absolute"
+                style="top: 82%; left: 10%; font-size: 3vw;" href="pages/form.html"><i class="bi bi-play-fill"></i>
+                <p class="m-0">Reproducir</p>
+            </a>
+            <button class="btn btn-dark bg-dark bg-opacity-75 d-flex align-items-center gap-2 position-absolute"
+                style="top: 82%; left: 10%; margin-left: 10em; font-size: 3vw;"><i class="bi bi-info-circle"></i>
+                <p class="m-0">Informacion</p>
+            </button>
         </article>
         <!-- * /IMAGEN DE PORTADA -->
         <!-- * /IMAGEN DE PORTADA -->
@@ -50,7 +74,8 @@
                 </ol>
                 <!-- ^ Lo que hay dentro del carrusel -->
                 <div class="carousel-inner">
-                    <p class="text-primary mb-1 ms-3">Peliculas</p>
+                    <p class="text-primary mb-1 ms-3 d-md-block d-lg-none">Películas</p>
+                    <p class="text-primary mb-1 ms-3 d-none d-lg-block fs-1">Películas</p>
                     <div class="carousel-item active">
                         <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/movie_dayShift.jpg" class="w-25" loading="lazy" />
@@ -101,7 +126,8 @@
                 </ol>
                 <!-- ^ Lo que hay dentro del carrusel -->
                 <div class="carousel-inner">
-                    <p class="text-primary mb-1 ms-3">Series</p>
+                    <p class="text-primary mb-1 ms-3 d-md-block d-lg-none">Series</p>
+                    <p class="text-primary mb-1 ms-3 d-none d-lg-block fs-1">Series</p>
                     <div class="carousel-item active">
                         <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/serie_anhqv.webp" class="w-25" loading="lazy" />
@@ -152,7 +178,8 @@
                 </ol>
                 <!-- ^ Lo que hay dentro del carrusel -->
                 <div class="carousel-inner">
-                    <p class="text-primary mb-1 ms-3">Solo en Netflix</p>
+                    <p class="text-primary mb-1 ms-3 d-md-block d-lg-none">Solo en Netflix</p>
+                    <p class="text-primary mb-1 ms-3 d-none d-lg-block fs-1">Solo en Netflix</p>
                     <div class="carousel-item active">
                         <a class="d-flex justify-content-between gap-1 ms-3 me-3" href="pages/form.html">
                             <img src="assets/serieN_dinero.jpg" class="w-25" loading="lazy" />
@@ -246,6 +273,7 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

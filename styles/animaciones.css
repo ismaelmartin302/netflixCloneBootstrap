@@ -24,3 +24,11 @@
     transition: 0.2s;
     transform: scale(1.5);
 }
+
+
+/* Evitar que crezcan mucho los botones de la portada */
+@media (width > 1000px) {
+    .anim-hover-video a, .anim-hover-video button {
+        font-size: 2em !important;
+    }
+}
